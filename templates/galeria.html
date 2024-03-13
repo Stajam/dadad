@@ -1,10 +1,11 @@
 <!DOCTYPE html>
   <html> 
     <head>
-      <title>Galeria de imagens</title>   
+      <title>Galeria de imagens</title>  
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/galeria.css')}}">
     </head>
     <body>
-      <!-- INCLUA AQUI A IMAGEM QUE SERÁ EXIBIDA DE FORMA DINÂMICA, DE ACORDO COM O PARÂMETRO --> 
+      <img src="{{ url_for('static', filename='imgs/galeria/'+imagem+'.webp')}}"> 
     </body>
   </html>
 
